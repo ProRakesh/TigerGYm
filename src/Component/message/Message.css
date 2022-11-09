@@ -1,0 +1,115 @@
+.Message{
+    display: flex;
+    background-color: var(--red-color);
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 20px 80px;
+    flex-wrap: wrap;
+}
+.mess{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.mess>span{
+    font-size: 4.5rem;
+    font-weight: normal;
+}
+.mestitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2rem;
+    text-align: center;
+}
+.mestitle>span{
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+.mail{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+}
+.mail>input{
+    padding: 20px 10px;
+    width:30vw;
+    outline:none;
+    font-size: 1.4rem;
+    border: none;
+    align-items: center;
+}
+.mail>button{
+    margin: 0;
+    padding:  20px 30px;
+    border: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+   background-color:  rgb(12, 10, 10);
+   color: white;
+   display: flex;
+
+}
+
+@media screen and (max-width:1360px) {
+    .mestitle span{
+        font-size: 2.2rem;
+    }
+    .mestitle>p{
+        font-size: 1.2rem;
+    }
+    .mail>input{
+       
+        width:60vw;
+      
+    }
+    .mail>button{
+        width: 20vw;
+    }
+
+}
+
+@media screen and (max-width:860px) {
+    .mestitle span{
+        font-size: 1.5rem;
+    }
+    .mestitle>p{
+        font-size: 1.2rem;
+    }
+    .mail>input{
+       
+        width:55vw;
+      
+    }
+    .Message{
+        padding: 20px;
+    }
+   
+}
+@media screen and (max-width:685px) {
+    
+   
+    .mestitle span{
+        font-size: 1.2rem;
+    }
+    .mestitle>p{
+        font-size: 1rem;
+    }
+    .mail>input{
+       
+       width: 50vw;
+       padding: 10px;
+
+      
+    }
+    .mail>button{
+        width: auto;
+        padding: 10px;
+    }
+
+}

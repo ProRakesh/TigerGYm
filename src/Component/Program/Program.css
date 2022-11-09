@@ -1,0 +1,141 @@
+
+.programtitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+
+    
+
+    
+}
+.programtitle>span{
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 4.2rem;
+}
+.programtitle>p{
+    width: 60%;
+    text-align: center;
+}
+.serviceprogram{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3.5rem;
+    padding: 0 150px;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+
+}
+
+.leftservice{
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    min-width: 20%;
+    max-width: 22%;
+    padding: 50px 20px;
+    gap: 1.5rem;
+    border-radius: 0.2rem;
+    flex-wrap: wrap;
+    margin: 0;
+    transition: all 0.3s ease;
+    position: relative;
+
+
+}
+
+
+.leftservice>img{
+    width:120px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap
+
+}
+.title>span{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.title>p{
+    font-size: 0.8rem;
+}
+.leftservice:hover{
+    background-color: var(--red-color);
+}
+.leftservice-bg{
+    background-color: var(--red-color)!important;
+}
+.leftservice-bg:hover{
+    background-color: rgb(17, 17, 17)!important;
+
+}
+.servicenumber{
+    position: absolute;
+    font-size: 3rem;
+    font-weight: bold;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: transparent;
+    top: 0;
+    right: 1.2rem;
+    opacity: 0.5;
+}
+
+
+@media screen and (max-width:1300px){
+    .serviceprogram{
+        padding: 0 50px;
+    }
+    .leftservice{
+        max-width: 25%;
+    }
+}
+@media screen and (max-width:920px){
+  
+    .serviceprogram{
+        padding: 0 50px;
+        gap: 3rem;
+    }
+
+   
+.leftservice{
+    max-width: 100%;
+    gap: 2rem;
+}
+
+    .title{
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width:565px){
+  .programtitle>span
+  {
+font-size: 2.5rem;
+  }
+  .programtitle>p{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:372px){
+    .programtitle>span
+    {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+    }
+}

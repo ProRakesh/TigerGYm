@@ -1,0 +1,81 @@
+.Coach{
+    display: flex;
+    margin-top: 6rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.Coach>span{
+    font-size: 3.5rem;
+    line-height: 3.8rem;
+    font-weight: bold;
+}
+
+.Coach>p{
+    display: flex;
+    width: 80%;
+}
+
+.coachpartner{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.partner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    flex-wrap: wrap;
+
+}
+.partner>img{
+    max-width:18vw;
+}
+.partner>span{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+
+}
+
+
+@media screen and (max-width:880px) {
+    .Coach>p{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .partner>img{
+        min-width: 25vw
+    }
+}
+@media screen and (max-width:720px) {
+    
+    .Coach>span{
+        font-size: 2.5rem;
+    }
+    .partner>img{
+        min-width: 50vw
+    }
+}
+@media screen and (max-width:380px) {
+    
+    .Coach>span{
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+    .Coach>p{
+        width: 100%;
+    }
+    .partner>img{
+        min-width: 80vw
+    }
+}
